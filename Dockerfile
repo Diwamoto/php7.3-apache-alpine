@@ -1,5 +1,7 @@
 FROM alpine:edge
 
+MAINTAINER Diwamoto <daiki.work.0118@gmail.com>
+
 RUN apk update && apk upgrade && apk add \
 	bash musl-dev apache2 php7 php7-apache2 ca-certificates openssh tzdata openntpd nano \
     php7-phar php7-iconv php7-ftp php7-openssl php7-pear php7-dev php7-mcrypt php7-mbstring \
