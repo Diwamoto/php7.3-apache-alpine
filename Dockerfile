@@ -12,4 +12,6 @@ RUN apk update && apk upgrade && apk add \
     && cp /usr/bin/php7 /usr/bin/php \
     && rm -rf /tmp/* /var/cache/apk/* 
 
+WORKDIR /var/www/html
+
 CMD /usr/sbin/httpd -D FOREGROUND
